@@ -25,11 +25,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
 
+//        todo 3 get the bahaviour bottom sheet
         mBottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
 
+        // TODO: 9/24/16
         mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(View bottomSheet, int newState) {
+                // TODO: 9/24/16 6 - when the bottom sheet is at the mimumum and we collapse, close it
                 if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
                     mBottomSheetBehavior.setPeekHeight(0);
                 }
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    // TODO: 9/24/16 4 - when click, change the bottom bar behavior
     @Override
     public void onClick(View v) {
         switch( v.getId() ) {
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.button_2: {
+//                todo 5 - with setPeekHeight and setState, when bottom sheet expands, it can shorten -> collapsed
                 mBottomSheetBehavior.setPeekHeight(300);
                 mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                 break;

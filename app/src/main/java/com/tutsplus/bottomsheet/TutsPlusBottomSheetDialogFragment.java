@@ -9,6 +9,9 @@ import android.view.View;
 
 /**
  * Created by Paul on 2/26/16.
+ * // TODO: 9/24/16 : there are two ways to create the bottom sheet,
+ * 1: use behavior
+ * 2: extend BottomSheetDialogFragment
  */
 public class TutsPlusBottomSheetDialogFragment extends BottomSheetDialogFragment {
 

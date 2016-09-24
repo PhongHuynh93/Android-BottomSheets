@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
-
+    <!--todo 1 if you want to use bottom sheet, use CoordinatorLayout-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,6 +51,9 @@
 
     </ScrollView>
 
+    <!--todo 2 -this is bottom sheet which hidden, any view can be bottom sheet-->
+    <!--use NestedScrollView so we can scroll-->
+    <!--declare max height of bottom sheet-->
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/bottom_sheet"
         android:layout_width="match_parent"
